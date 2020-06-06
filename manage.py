@@ -6,7 +6,7 @@ from sanic.response import json,text
 
 app = Sanic(__name__)
 
-@app.route('/sanic/vi/cluster',method=['POST'])
+@app.route('/sanic/vi/cluster',methods=['POST'])
 def get_simi(request):
     data = request.json
     text_list_json = data['text_list_json']
